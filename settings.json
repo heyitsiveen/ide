@@ -1,0 +1,28 @@
+{
+  // APPEARANCE
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Vercel Theme",
+  "workbench.iconTheme": "symbols",
+  "workbench.sideBar.location": "right",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'JetBrains Mono', 'Courier New', monospace",
+  "editor.codeLensFontFamily": "JetBrains Mono",
+  "editor.inlayHints.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontLigatures": true,
+  "editor.fontLigatures": true,
+  // EDITOR
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "${dirname} - page.tsx",
+    "**/app/**/*slug*/page.tsx": "${dirname(1)}/[slug] - page.tsx",
+    "**/app/**/{layout,route}.{tsx,ts}": "${dirname} - ${filename}.${extname}",
+    "**/{components,hooks,lib,modules,server}/**/*.{ts,tsx}": "${dirname} - ${filename}.${extname}"
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "editor.tabSize": 2,
+  "editor.guides.indentation": false,
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
