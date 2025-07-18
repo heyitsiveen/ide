@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "ultracite": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://www.ultracite.ai/api/mcp/mcp"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"],
+      "env": {
+        "DEFAULT_MINIMUM_TOKENS": "10000"
+      },
+      "fromGalleryId": "upstash.context7"
+    },
+    "shopify-dev-mcp": {
+      "command": "npx",
+      "args": ["-y", "@shopify/dev-mcp@latest"]
+    }
+  }
+}
