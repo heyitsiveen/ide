@@ -20,9 +20,10 @@
   },
   "typescript.referencesCodeLens.enabled": true,
   "editor.tabSize": 2,
-  "editor.guides.indentation": false,
+  "editor.guides.indentation": true,
   "explorer.compactFolders": false,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[liquid]": {
