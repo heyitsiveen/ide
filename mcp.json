@@ -1,20 +1,39 @@
 {
   "mcpServers": {
+    "Context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {}
+    },
     "ultracite": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://www.ultracite.ai/api/mcp/mcp"]
+      "args": ["-y", "mcp-remote", "https://www.ultracite.ai/api/mcp/http"]
     },
-    "context7": {
-      "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"],
-      "env": {
-        "DEFAULT_MINIMUM_TOKENS": "10000"
-      },
-      "fromGalleryId": "upstash.context7"
+    "Better Auth": {
+      "url": "https://mcp.chonkie.ai/better-auth/better-auth-builder/mcp",
+      "headers": {}
     },
-    "shopify-dev-mcp": {
+    "shadcn": {
       "command": "npx",
-      "args": ["-y", "@shopify/dev-mcp@latest"]
+      "args": ["shadcn@latest", "mcp"]
+    },
+    "Convex": {
+      "command": "npx -y convex@latest mcp start",
+      "env": {},
+      "args": []
+    },
+    "Figma": {
+      "url": "https://mcp.figma.com/mcp",
+      "headers": {}
+    },
+    "Neon": {
+      "command": "npx -y mcp-remote https://mcp.neon.tech/mcp",
+      "env": {},
+      "args": []
+    },
+    "Shopify": {
+      "command": "npx -y @shopify/dev-mcp@latest",
+      "env": {},
+      "args": []
     }
   }
 }
