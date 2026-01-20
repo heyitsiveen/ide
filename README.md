@@ -1,7 +1,7 @@
 ## Claude Code
 ### Prompt
 ```shell
-I want to build a [idea], please help me create a plan. Write this in a prd.md
+I want to build a [idea]. Create a detailed plan in prd.md
 ```
 ```shell
 Read this plan file and interview me in detail using AskUserQuestionTool about literally anything: technical, implementation, UI & UX, concerns, tradeoffs, etc.
