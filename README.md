@@ -15,6 +15,11 @@ Read this plan file and interview me in detail using AskUserQuestionTool about l
 Add tests for the [feature]
 ```
 
+#### Handle documentation
+```shell
+Add JSDoc comments with more context and examples
+```
+
 ### CLAUDE.md
 
 #### Let Claude interview you
