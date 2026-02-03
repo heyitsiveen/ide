@@ -1,33 +1,118 @@
 {
-    // APPEARANCE
-    "window.commandCenter": true,
-    "workbench.colorTheme": "Vesper",
-    "workbench.iconTheme": "symbols",
-    "workbench.sideBar.location": "right",
-    "editor.formatOnSave": true,
-    "editor.fontFamily": "'JetBrains Mono', 'Courier New', monospace",
-    "editor.codeLensFontFamily": "JetBrains Mono",
-    "editor.inlayHints.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontLigatures": true,
-    "editor.fontLigatures": true,
-    // EDITOR
-    "workbench.editor.labelFormat": "short",
-    "workbench.editor.customLabels.patterns": {
-      "**/app/**/page.tsx": "${dirname} - page.tsx",
-      "**/app/**/*slug*/page.tsx": "${dirname(1)}/[slug] - page.tsx",
-      "**/app/**/{layout,route}.{tsx,ts}": "${dirname} - ${filename}.${extname}",
-      "**/{components,hooks,lib,modules,server}/**/*.{ts,tsx}": "${dirname} - ${filename}.${extname}"
+  // APPEARANCE
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Vesper",
+  "workbench.iconTheme": "symbols",
+
+  // --- Typography ---
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'JetBrains Mono NL','JetBrains Mono', 'Zed Mono', monospace",
+  "editor.lineHeight": 2,
+  "editor.fontWeight": "400",
+  "editor.letterSpacing": 0.5,
+  "editor.fontLigatures": true,
+  "editor.codeLensFontFamily": "JetBrains Mono",
+  "editor.inlayHints.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontLigatures": true,
+
+  // --- UI Minimalism ---
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrenceHighlight": "off",
+  "editor.selectionHighlight": false,
+  "editor.bracketPairColorization.enabled": true,
+
+  // --- Breadcrumbs (The file path bar) ---
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolPath": "off",
+
+  // --- Tab & Navigation ---
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.labelFormat": "default",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.navigationControl": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "${dirname} - page.tsx",
+    "**/app/**/*slug*/page.tsx": "${dirname(1)}/[slug] - page.tsx",
+    "**/app/**/{layout,route}.{tsx,ts}": "${dirname} - ${filename}.${extname}",
+    "**/{components,hooks,lib,modules,server}/**/*.{ts,tsx}": "${dirname} - ${filename}.${extname}",
+  },
+
+  // --- Editor Behavior ---
+  "editor.lineNumbers": "on",
+  "editor.glyphMargin": false,
+  "editor.folding": false,
+  "editor.matchBrackets": "never",
+  "editor.renderWhitespace": "none",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "none",
+  "windowColors.askToColorizeRepoWhenOpened": false,
+  "window.customTitleBarVisibility": "auto",
+
+  // --- COLOR CUSTOMIZATIONS ---
+  "workbench.colorCustomizations": {
+    "[Ayu Mirage Zed]": {
+      "editor.background": "#1A1A1A",
+      "editorGutter.background": "#1A1A1A",
+      "breadcrumb.background": "#1A1A1A",
+      "breadcrumb.foreground": "#666666",
+      "breadcrumb.focusForeground": "#999999",
+      "breadcrumb.activeSelectionForeground": "#AAAAAA",
+      "sideBar.background": "#141414",
+      "sideBar.border": "#141414",
+      "activityBar.background": "#141414",
+      "activityBar.border": "#141414",
+      "editorGroupHeader.tabsBackground": "#141414",
+      "editorGroupHeader.tabsBorder": "#141414",
+      "tab.activeBackground": "#141414",
+      "tab.inactiveBackground": "#141414",
+      "tab.border": "#141414",
+      "terminal.background": "#141414",
+      "panel.background": "#141414",
+      "panel.border": "#141414",
+      "statusBar.background": "#141414",
+      "statusBar.border": "#141414",
+      "focusBorder": "#00000000",
+      "input.border": "#00000000",
+      "input.background": "#252525",
+      "quickInput.background": "#141414",
+      "quickInput.foreground": "#CCCCCC",
+      "quickInputList.focusBackground": "#2d2d2d",
+      "quickInputTitle.background": "#141414",
+      "pickerGroup.foreground": "#575757",
+      "widget.border": "#333333",
+      "widget.shadow": "#000000aa",
     },
-    "typescript.referencesCodeLens.enabled": true,
-    "editor.tabSize": 2,
-    "editor.guides.indentation": true,
-    "explorer.compactFolders": false,
-    "breadcrumbs.enabled": true,
-    "editor.minimap.enabled": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
+  },
+
+  // --- CSS LOADER (This makes the "/" happen) ---
+  "vscode_custom_css.imports": [
+    "file:///c:/Users/vngrg/.config/vscode/zed-style.css",
+    "file:///c:/Users/vngrg/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js",
+  ],
+
+  // EDITOR
+  "editor.formatOnSave": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "biome.suggestInstallingGlobally": false,
+  "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome",
-    "[liquid]": {
-      "editor.defaultFormatter": "Shopify.theme-check-vscode"
-    },
-    "symbols.hidesExplorerArrows": false,
-  }
+  },
+  "symbols.hidesExplorerArrows": false,
+}
