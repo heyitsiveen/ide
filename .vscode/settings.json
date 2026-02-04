@@ -7,9 +7,9 @@
   // --- Typography ---
   "editor.fontSize": 14,
   "editor.fontFamily": "'JetBrains Mono NL','JetBrains Mono', 'Zed Mono', monospace",
-  "editor.lineHeight": 2,
+  // "editor.lineHeight": 2,
   "editor.fontWeight": "400",
-  "editor.letterSpacing": 0.5,
+  // "editor.letterSpacing": 0.5,
   "editor.fontLigatures": true,
   "editor.codeLensFontFamily": "JetBrains Mono",
   "editor.inlayHints.fontFamily": "JetBrains Mono",
@@ -100,7 +100,6 @@
   // --- CSS LOADER (This makes the "/" happen) ---
   "vscode_custom_css.imports": [
     "file:///c:/Users/vngrg/.config/vscode/zed-style.css",
-    "file:///c:/Users/vngrg/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js",
   ],
 
   // EDITOR
